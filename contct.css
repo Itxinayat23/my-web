@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif; 
+    list-style: none;
+    text-decoration: none;
+box-sizing: border-box;
+}
+:root{
+    --bg-color:#1f1f21;
+    --text-color:#fff;
+    --main-color:#ffae00;
+    --big-font:7rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+.contact{
+    min-height: 100vh;
+
+    padding: 50px;
+ text-align: center;
+
+
+}
+.main{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.main h2{
+    font-size: 36px;
+    margin-bottom: 40px;
+  color: var(--main-color);
+
+
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.contact-form{
+    text-align: left;
+
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+
+}
+.form-group{
+    margin-bottom: 20px;
+}
+input,textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: #333;
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:royalblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    background-color: slateblue;
+}
+.contact-info{
+    text-align: left;
+
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+  color: var(--main-color);
+
+}
+.contact-info p{
+    margin-bottom: 10px;
+color: aliceblue;
+
+}
+.contact-info i{
+  color: var(--text-color);
+    margin-left: 10px;
+    font-size: 20px;
+}
+@media screen  and  (max-width:1250px){
+    .main{
+        padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+   
+    }
+    @media(max-width:500px){
+        :root{
+            --big-font:4rem;
+                --p-font:15px;
+                transition: 2s;
+                
+        } 
+}
+}
+@media(max-width:950px){
+    .contact-info h3{
+     margin: auto;
+     padding: auto;
+     left: auto;
+     right: auto;
+ 
+    } 
+    .contact-info i{
+margin: auto;
+padding: auto;
+left: auto;
+right: auto;
+bottom: auto;
+    }
+}
